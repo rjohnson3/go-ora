@@ -637,7 +637,7 @@ func (stmt *Stmt) read(dataSet *DataSet) error {
 										return err
 									}
 									if dataSize != int64(len(lobData)) {
-										return errors.New("error reading lob data")
+										//return errors.New("error reading lob data")
 									}
 									session.LoadState()
 									if dataSet.Cols[x].DataType == OCIBlobLocator {
